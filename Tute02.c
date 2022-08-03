@@ -12,13 +12,31 @@ e.g.
 Distance -> 20
 Amount = 20 x 50 = 1000
 
-
 Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 #include <stdio.h>
 
 int main() {
+
+  int distance=0;
+  int amount=0;
+  printf("Enter the distance traveled :");
+  if(scanf("%d",&distance)==1)
+  {
+    if(distance<30)
+    {
+      amount=50*distance;
+    }
+    else
+    {
+      amount=(30*50)+(distance-30)*40;
+      
+    }
+  }
+  printf("The amount to be paid %d:",amount);
+  
+
   
   return 0;
 }
